@@ -1,11 +1,11 @@
-#include <GL/freeglut.h>
+#include <GL/glut.h>
 void display()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
 	gluLookAt(6.0f, -15.0f, 10.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f);
 
-	// Куб
+	// пїЅпїЅпїЅ
 	glBegin(GL_QUADS);
 	glColor3f(1.0f, 0.0f, 0.0f);
 	glVertex3f(-2, 2, 2);
@@ -54,7 +54,7 @@ void display()
 	glVertex3f(-2, -2, -2);
 	glEnd();
 
-	// Пирамида
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	glBegin(GL_TRIANGLES);
 	glColor3f(1.0f, 0.0f, 0.0f);
 	glVertex3f(6, -2, -2);
@@ -91,7 +91,7 @@ void display()
 	glVertex3f(4, -2, 2);
 	glEnd();
 
-	glutSwapBuffers();//прорисовываем буфер на экран
+	glutSwapBuffers();//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 }
 
 void changeSize(int w, int h)
@@ -108,21 +108,21 @@ void changeSize(int w, int h)
 
 int main(int argc, char **argv)
 {
-	glutInit(&argc, argv);//начальная инициализация окна
-	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);//установка режима отображения
-	glutInitWindowSize(600,600);//размер окна
-	glutInitWindowPosition(200, 200);//начальная позиция на экране
-	glutCreateWindow("Lab2");//заголовок окна
-	glClearColor(0, 0, 0, 0);//цвет фона
+	glutInit(&argc, argv);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	glutInitWindowSize(600,600);//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	glutInitWindowPosition(200, 200);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	glutCreateWindow("Lab2");//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	glClearColor(0, 0, 0, 0);//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
-	// настройка проекции
-	glMatrixMode(GL_PROJECTION);//режим матрицы
-	glLoadIdentity();//отчищает матрицу
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	glMatrixMode(GL_PROJECTION);//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	glLoadIdentity();//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-	glutDisplayFunc(display);//функция которой мы передаем имя функции для отрисовки окна. 
-	glutReshapeFunc(changeSize);//подстройка размеров изображения
+	glutDisplayFunc(display);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ. 
+	glutReshapeFunc(changeSize);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	glutIdleFunc(display);
 	glEnable(GL_DEPTH_TEST);
 
-	glutMainLoop();//запускаем всё проинициализированное
+	glutMainLoop();//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 }
